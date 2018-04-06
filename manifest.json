@@ -1,0 +1,11 @@
+{
+    "name": "Sample App",
+    "short_name": "Sample App",
+    "description": "An app the helps you find hotels near your location",
+    "display": "Standalone",
+    "background_color": "",
+    "theme_color": "",
+    "lang": "en-US",
+    "start_url": "/index.html",
+    
+}
