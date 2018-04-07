@@ -61,3 +61,29 @@ html, body {
     background-color: #3e8e41;
 }
 */
+
+#sample{
+    margin: 50px auto;
+    display: block;
+    
+    position: relative;
+    
+    height: 200px;
+    width: 200px;
+    
+}
+
+#sample-content{
+    display: none;
+    
+    position: relative;
+    min-height: 100px;
+    min-width: 100px;
+    
+    background-color: aqua;
+    
+}
+
+#bttndisp{
+    position: inherit;
+}
