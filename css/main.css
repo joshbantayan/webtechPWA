@@ -30,7 +30,11 @@ html, body {
 }
 
 /** button */
+
+#dropdown-con {
+}
 .dropbtn {
+    border-radius: 15px;
     background-color: #3498DB;
     color: white;
     padding: 16px;
@@ -40,6 +44,7 @@ html, body {
 }
 
 .dropbtn:hover, .dropbtn:focus {
+    
     background-color: #2980B9;
 }
 
