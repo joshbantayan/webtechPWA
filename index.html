@@ -3,34 +3,29 @@
         <title> Sample Title </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <script rel="text/javascript" href="hotels.json"> </script>
         <link rel="stylesheet" href="css/main.css">
         
-        <script src="scripts/main.js"></script>
+        <script async src="scripts/main.js"></script>
     </head>
 <body>
-    
+    <div id="main-body">
     <div id="dropdown">
-        <div id="title_container">
-            <h1 class="main-title"> Sample app </h1>
+        <div id="dropdown-sub">
+        <div id="title-container">
+            <img src="images/logo.png" id="logo">
         </div>
         <div id="dropdown-con">
-            <button onclick="aDropdown()" class="dropbutton"> Where are you in Baguio? </button>
-            <div id="dropdown-options" class="dropdown-content"> 
+            <button onclick="myFunction()" class="dropbtn"> Where are you in Baguio? </button>
+            <div id="myDropdown" class="dropdown-content"> 
                 <a href=""> Sample </a>
                 <a href=""> Sample </a>
                 <a href=""> Sample </a>
                 <a href=""> Sample </a>
             </div>
         </div>
-        
-        <div id="sample">
-            <button onclick="display('sample-content')" id="bttndisp">Test</button>
-            <div id="sample-content"></div>
-        </div>
     </div>
-    
-    
-
+    </div>
+    </div>
 </body>
 </html>
