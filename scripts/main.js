@@ -106,9 +106,16 @@ var myData = {
 };
 
 var x;
+var y;
 var i;
 var choice;
 function trancButton() {
+    y = document.getElementById("dropdown");
+    if (y.style.display === 'none'){
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
  x = document.getElementById("tranc").getAttribute("value");
    choice = Number(x);
     for (i=0; i < myData.id[0].hotels.length; i++){
