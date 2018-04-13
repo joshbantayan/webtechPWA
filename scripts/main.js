@@ -105,8 +105,27 @@ var myData = {
     ]
 };
 
-var x = myData.id[0].hotels[0].name;
 
+
+var choice;
+var x;
+
+document.getElementsByClassName("option").addEventListener("click", checkChoice);
+
+function checkChoice() {
+    choice = document.getElementsByClassName("option").value;
+}
+choice = document.getElementsByClassName("btn");
+x = choice.value;
+//switch(choice){
+//        var i;
+//    case 0 : for(i = 0; i < myData.id[0].hotels.length; i++){
+//        document.
+//    }
+//}
+
+   var x = myData.id[0].hotels[0].name;
 window.onload = function () {
-    document.getElementById("demo").innerHTML = x;
+ 
+document.getElementById("demo").innerHTML = x;
 };
