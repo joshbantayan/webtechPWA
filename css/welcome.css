@@ -1,0 +1,16 @@
+body{
+    background-color: #42f4c8;
+}
+
+
+#logo{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+p{
+    font-size: 20px;
+}
