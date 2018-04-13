@@ -3,18 +3,18 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
     }
-  }
 }
 
 var myData = {
@@ -109,68 +109,87 @@ var x;
 var y;
 var i;
 var choice;
+
 function trancButton() {
     y = document.getElementById("dropdown");
-    if (y.style.display === 'none'){
+    if (y.style.display === 'none') {
         y.style.display = "block";
     } else {
         y.style.display = "none";
     }
- x = document.getElementById("tranc").getAttribute("value");
-   choice = Number(x);
-    for (i=0; i < myData.id[0].hotels.length; i++){
-            document.getElementById("second-page").innerHTML +=
-                '<div class="hotel-content">'
-                + '<h2>' + myData.id[0].hotels[i].name + '</h2>'
-                + '<h3>' +myData.id[0].hotels[i].address + '</h3>'
-                + '<h3>Php' +myData.id[0].hotels[i].rate + '</h3>'
-                + '<button> Compute </button>'
-                + '</div>';
-            
+    x = document.getElementById("tranc").getAttribute("value");
+    choice = Number(x);
+    for (i = 0; i < myData.id[0].hotels.length; i++) {
+        document.getElementById("second-page").innerHTML +=
+            '<div class="hotel-content">' +
+            '<h2>' + myData.id[0].hotels[i].name + '</h2>' +
+            '<h3>' + myData.id[0].hotels[i].address + '</h3>' +
+            '<h3>Php' + myData.id[0].hotels[i].rate + '</h3>' +
+            '<button class="comp-but"> Compute </button>' +
+            '</div>';
+
     }
 }
 
 function auroraButton() {
- x = document.getElementById("aurora").getAttribute("value");
-     choice = Number(x);
-    for (i=0; i < myData.id[0].hotels.length; i++){
-            document.getElementById("second-page").innerHTML +=
-                '<div class="hotel-content">'
-                + '<h2>' + myData.id[1].hotels[i].name + '</h2>'
-                + '<h3>' +myData.id[1].hotels[i].address + '</h3>'
-                + '<h3>Php' +myData.id[1].hotels[i].rate + '</h3>'
-                + '<button> Compute </button>'
-                + '</div>';
-            
+    y = document.getElementById("dropdown");
+    if (y.style.display === 'none') {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+    x = document.getElementById("aurora").getAttribute("value");
+    choice = Number(x);
+    for (i = 0; i < myData.id[0].hotels.length; i++) {
+        document.getElementById("second-page").innerHTML +=
+            '<div class="hotel-content">' +
+            '<h2>' + myData.id[1].hotels[i].name + '</h2>' +
+            '<h3>' + myData.id[1].hotels[i].address + '</h3>' +
+            '<h3>Php' + myData.id[1].hotels[i].rate + '</h3>' +
+            '<button class="comp-but"> Compute </button>' +
+            '</div>';
+
     }
 }
 
 function sessionButton() {
- x = document.getElementById("session").getAttribute("value");
-     choice = Number(x);
-    for (i=0; i < myData.id[0].hotels.length; i++){
-            document.getElementById("second-page").innerHTML +=
-                '<div class="hotel-content">'
-                + '<h2>' + myData.id[0].hotels[i].name + '</h2>'
-                + '<h3>' +myData.id[0].hotels[i].address + '</h3>'
-                + '<h3>Php' +myData.id[0].hotels[i].rate + '</h3>'
-                + '<button> Compute </button>'
-                + '</div>';
-            
+    y = document.getElementById("dropdown");
+    if (y.style.display === 'none') {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+    x = document.getElementById("session").getAttribute("value");
+    choice = Number(x);
+    for (i = 0; i < myData.id[0].hotels.length; i++) {
+        document.getElementById("second-page").innerHTML +=
+            '<div class="hotel-content">' +
+            '<h2>' + myData.id[0].hotels[i].name + '</h2>' +
+            '<h3>' + myData.id[0].hotels[i].address + '</h3>' +
+            '<h3>Php' + myData.id[0].hotels[i].rate + '</h3>' +
+            '<button class="comp-but"> Compute </button>' +
+            '</div>';
+
     }
 }
 
 function burnhamButton() {
- x = document.getElementById("burnham").getAttribute("value");
-     choice = Number(x);
-    for (i=0; i < myData.id[0].hotels.length; i++){
-            document.getElementById("second-page").innerHTML +=
-                '<div class="hotel-content">'
-                + '<h2>' + myData.id[0].hotels[i].name + '</h2>'
-                + '<h3>' +myData.id[0].hotels[i].address + '</h3>'
-                + '<h3>Php' +myData.id[0].hotels[i].rate + '</h3>'
-                + '<button> Compute </button>'
-                + '</div>';
-            
+    y = document.getElementById("dropdown");
+    if (y.style.display === 'none') {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+    x = document.getElementById("burnham").getAttribute("value");
+    choice = Number(x);
+    for (i = 0; i < myData.id[0].hotels.length; i++) {
+        document.getElementById("second-page").innerHTML +=
+            '<div class="hotel-content">' +
+            '<h2>' + myData.id[0].hotels[i].name + '</h2>' +
+            '<h3>' + myData.id[0].hotels[i].address + '</h3>' +
+            '<h3>Php' + myData.id[0].hotels[i].rate + '</h3>' +
+            '<button class="comp-but"> Compute </button>' +
+            '</div>';
+
     }
 }
