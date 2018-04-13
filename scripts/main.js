@@ -126,15 +126,44 @@ function trancButton() {
 function auroraButton() {
  x = document.getElementById("aurora").getAttribute("value");
      choice = Number(x);
-    alert("PLESAE");
+    for (i=0; i < myData.id[0].hotels.length; i++){
+            document.getElementById("second-page").innerHTML +=
+                '<div class="hotel-content">'
+                + '<h2>' + myData.id[1].hotels[i].name + '</h2>'
+                + '<h3>' +myData.id[1].hotels[i].address + '</h3>'
+                + '<h3>Php' +myData.id[1].hotels[i].rate + '</h3>'
+                + '<button> Compute </button>'
+                + '</div>';
+            
+    }
 }
 
 function sessionButton() {
  x = document.getElementById("session").getAttribute("value");
      choice = Number(x);
+    for (i=0; i < myData.id[0].hotels.length; i++){
+            document.getElementById("second-page").innerHTML +=
+                '<div class="hotel-content">'
+                + '<h2>' + myData.id[0].hotels[i].name + '</h2>'
+                + '<h3>' +myData.id[0].hotels[i].address + '</h3>'
+                + '<h3>Php' +myData.id[0].hotels[i].rate + '</h3>'
+                + '<button> Compute </button>'
+                + '</div>';
+            
+    }
 }
 
 function burnhamButton() {
  x = document.getElementById("burnham").getAttribute("value");
      choice = Number(x);
+    for (i=0; i < myData.id[0].hotels.length; i++){
+            document.getElementById("second-page").innerHTML +=
+                '<div class="hotel-content">'
+                + '<h2>' + myData.id[0].hotels[i].name + '</h2>'
+                + '<h3>' +myData.id[0].hotels[i].address + '</h3>'
+                + '<h3>Php' +myData.id[0].hotels[i].rate + '</h3>'
+                + '<button> Compute </button>'
+                + '</div>';
+            
+    }
 }
