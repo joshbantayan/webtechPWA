@@ -109,6 +109,17 @@ h1{
   text-decoration: none;
   color:red;
 }
+
+.linkregister{
+  
+  text-decoration: none;
+  color: blue;
+}
+.linkregister:hover{
+  bottom: 20px;
+  text-decoration: none;
+  color: red;
+}
 /**Login Footer Section**/
 #footer{
   position: absolute;
