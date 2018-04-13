@@ -105,27 +105,36 @@ var myData = {
     ]
 };
 
-
-
-var choice;
 var x;
-
-document.getElementsByClassName("option").addEventListener("click", checkChoice);
-
-function checkChoice() {
-    choice = document.getElementsByClassName("option").value;
+var i;
+var choice;
+function trancButton() {
+ x = document.getElementById("tranc").getAttribute("value");
+   choice = Number(x);
+    for (i=0; i < myData.id[0].hotels.length; i++){
+            document.getElementById("second-page").innerHTML +=
+                '<div class="hotel-content">'
+                + '<h2>' + myData.id[0].hotels[i].name + '</h2>'
+                + '<h3>' +myData.id[0].hotels[i].address + '</h3>'
+                + '<h3>Php' +myData.id[0].hotels[i].rate + '</h3>'
+                + '<button> Compute </button>'
+                + '</div>';
+            
+    }
 }
-choice = document.getElementsByClassName("btn");
-x = choice.value;
-//switch(choice){
-//        var i;
-//    case 0 : for(i = 0; i < myData.id[0].hotels.length; i++){
-//        document.
-//    }
-//}
 
-   var x = myData.id[0].hotels[0].name;
-window.onload = function () {
- 
-document.getElementById("demo").innerHTML = x;
-};
+function auroraButton() {
+ x = document.getElementById("aurora").getAttribute("value");
+     choice = Number(x);
+    alert("PLESAE");
+}
+
+function sessionButton() {
+ x = document.getElementById("session").getAttribute("value");
+     choice = Number(x);
+}
+
+function burnhamButton() {
+ x = document.getElementById("burnham").getAttribute("value");
+     choice = Number(x);
+}
