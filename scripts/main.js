@@ -103,18 +103,98 @@ var myData = {
             ]
         },
         {
-            "location": "Aurora Hill",
-            "hotels": [
-                {
-                    "name": "The Courtyards",
-                    "address": "Extension Road Evangelista Street Road 1, Leonilla Hill",
-                    "rate": 4343
+            "location" : "burnham park",
+            "hotels" : [
+                 {
+                    "name": "Baguio Burnham Suites Hotel",
+                    "address": "6 Kisad Road",
+                    "rate": 3839,
+                    "img" : "../images/Session Road/bbs.jpg",
                 },
                 {
-
-                }
-         ]
-      }
+                    "name" : "City Travel",
+                    "address" : "15 Kisad Road, Baguio City proper, Baguio",
+                    "rate" : 1923,
+                    "img" : "",
+                },
+                  {
+                    "name": "Inn Rocio",
+                    "address": "68 Kisad Road",
+                    "rate": 3172,
+                    "img" : "../images/Session Road/inn-rocio.jpg",
+                },
+                {
+                    "name" : "Prince Plaza Hotel",
+                    "address" : "17 legarda road, baguio city proper, baguio",
+                    "rate" : 2093,
+                    "img" : "",
+                },
+                  {
+                    "name": "Hotel Veniz",
+                    "address": "One Abanao St.",
+                    "rate": 2207,
+                    "img" : "../images/Session Road/hotel-veniz.jpg",
+                },
+                  {
+                    "name": "Eurotel Baguio",
+                    "address": "123 abanao extension barangay rizal park, baguio city proper, baguio",
+                    "rate": 1743,
+                    "img" : "",
+                },
+                 {
+                    "name": "Heritage Mansion",
+                    "address": "Kisad Road through Abanao Extension, corner G. del Pilar Street, 2600 Baguio",
+                    "rate": 4500,
+                    "img" : "",
+                },
+                  {
+                    "name": "Griffin Lodge",
+                    "address": "#6 Gen. Lim St. Near Kisad Road Burnham Park Baguio City, 2600 Baguio",
+                    "rate": 2200,
+                    "img" : "",
+                },
+                {
+                    "name": "A Baguio",
+                    "address": "Abanao Street corner Shagem Street, 2600 Baguio",
+                    "rate": 2900,
+                    "img" : "",
+                },
+                {
+                    "name": "Paragon and Suites",
+                    "address": "14-16 Otek Street, Rizal Monument, Benguet, 2600 Baguio",
+                    "rate": 4760,
+                    "img" : "",
+                },
+                ]},
+                {
+                    "location" : "camp john hay",
+                    "hotels" : [
+                         {
+                    "name": "The Manor",
+                    "address": "Ordonio Drive, Camp John Hay, Baguio",
+                    "rate": 10341,
+                    "img" : "",
+                    },
+                       {
+                    "name": "The Forest Lodge",
+                    "address": "Camp John Hay, loakan road, Baguio",
+                    "rate": 5045,
+                    "img" : "",
+                    },
+                        {
+                    "name": "Le Monet Hotel",
+                    "address": "Ordonio Drive, Loakan Road, Camp John Hay, 2600 Baguio",
+                    "rate": 6850,
+                    "img" : "",
+                    }, 
+                    {
+                    "name": "AIM Conference Center Baguio",
+                    "address": "Igorot Lodge, Club John Hay, Baguio",
+                    "rate": 2517,
+                    "img" : "",
+                    }, 
+              ]
+        }
     ]
 };
 
@@ -149,16 +229,16 @@ function sessionButton() {
     }
 }
 
-function auroraButton() {
+function burnhamButton() {
     y = document.getElementById("dropdown");
     if (y.style.display === 'none') {
         y.style.display = "block";
     } else {
         y.style.display = "none";
     }
-    x = document.getElementById("aurora").getAttribute("value");
+    x = document.getElementById("burnham").getAttribute("value");
     choice = Number(x);
-    for (i = 0; i < myData.id[0].hotels.length; i++) {
+    for (i = 0; i < myData.id[1].hotels.length; i++) {
         document.getElementById("second-page").innerHTML +=
             '<div class="hotel-content">' +
             '<h2>' + myData.id[1].hotels[i].name + '</h2>' +
@@ -170,44 +250,26 @@ function auroraButton() {
     }
 }
 
-function trancButton() {
+function campButton() {
     y = document.getElementById("dropdown");
     if (y.style.display === 'none') {
         y.style.display = "block";
     } else {
         y.style.display = "none";
     }
-    x = document.getElementById("tranc").getAttribute("value");
+    x = document.getElementById("camp").getAttribute("value");
     choice = Number(x);
-    for (i = 0; i < myData.id[0].hotels.length; i++) {
+    for (i = 0; i < myData.id[2].hotels.length; i++) {
         document.getElementById("second-page").innerHTML +=
             '<div class="hotel-content">' +
-            '<h2>' + myData.id[0].hotels[i].name + '</h2>' +
-            '<h3>' + myData.id[0].hotels[i].address + '</h3>' +
-            '<h3>Php' + myData.id[0].hotels[i].rate + '</h3>' +
+            '<h2>' + myData.id[2].hotels[i].name + '</h2>' +
+            '<h3>' + myData.id[2].hotels[i].address + '</h3>' +
+            '<h3>Php' + myData.id[2].hotels[i].rate + '</h3>' +
             '<button class="comp-but"> Compute </button>' +
             '</div>';
 
     }
 }
 
-function burnhamButton() {
-    y = document.getElementById("dropdown");
-    if (y.style.display === 'none') {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
-    x = document.getElementById("burnham").getAttribute("value");
-    choice = Number(x);
-    for (i = 0; i < myData.id[0].hotels.length; i++) {
-        document.getElementById("second-page").innerHTML +=
-            '<div class="hotel-content">' +
-            '<h2>' + myData.id[0].hotels[i].name + '</h2>' +
-            '<h3>' + myData.id[0].hotels[i].address + '</h3>' +
-            '<h3>Php' + myData.id[0].hotels[i].rate + '</h3>' +
-            '<button class="comp-but"> Compute </button>' +
-            '</div>';
 
-    }
-}
+

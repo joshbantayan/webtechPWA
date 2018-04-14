@@ -11,7 +11,7 @@ html, body {
 #main-body {
     display: table-cell;
     vertical-align: middle;
-    background: linear-gradient(#25abff, #175680);
+    background: linear-gradient(#25abff, #1e7daf);
     text-align: center;
 }
 
@@ -89,12 +89,15 @@ html, body {
     max-width: 50vh;
 }
 h2{
+    color: white;
     font-family: 'Fira Sans', sans-serif;
-    border-top: 5px solid red;
-    border-bottom: 5px solid; 
+    border-top: 5px solid #0598f4;
+    border-bottom: 5px #a6d4f0; 
+    font-size: 35px;
 }
 h3{
-  
+padding: 5px;
+border: 1px solid white;
 font-family: 'Roboto', sans-serif; 
 }
 .comp-but{
@@ -129,7 +132,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .hotel-content{
-    border-bottom: solid 10px red;
+    border-bottom: solid 10px #94d6ff;
     box-sizing: border-box;
     padding: 10px 10px 20px 20px;
     background-color: rgba(183, 158, 158, 0.26);
