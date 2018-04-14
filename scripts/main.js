@@ -68,7 +68,7 @@ var myData = {
                     "name": "Golden Pine Hotel",
                     "address": "Corner of Carino and Yandoc Streets",
                     "rate": 2656,
-                    "img" : "../images/Session Road/golden-pine",
+                    "img" : "../images/Session Road/golden-pine.jpg",
                 },
                 {
                     "name": "Baguio Holiday Villas",

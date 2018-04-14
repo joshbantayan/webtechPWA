@@ -11,7 +11,7 @@ html, body {
 #main-body {
     display: table-cell;
     vertical-align: middle;
-    background-image: url(../css/image1.jpg);
+    background: linear-gradient(#25abff, #175680);
     text-align: center;
 }
 
@@ -22,8 +22,9 @@ html, body {
     padding-bottom: 10vh;
     margin: 0 auto;
     width: 50%;
-    background-color: rgba(255, 242, 242, 0.63);
+    background-color: wheat;
     position: relative;
+    box-shadow: 5px 5px 2px #242323;
 }
 
 #title-container {
@@ -35,11 +36,12 @@ html, body {
 /** button */
 
 #dropdown-con {
+    background-color: wheat;;
 }
 .dropbtn {
     font-family: 'Fira Sans', sans-serif;
     border-radius: 15px;
-    background-color: #3498DB;
+    background: linear-gradient(#25abff, #175680);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -49,28 +51,37 @@ html, body {
 
 .dropbtn:hover, .dropbtn:focus {
     
-    background-color: #2980B9;
-}
-
-#dropdown {
+   background: linear-gradient(#175680, #25abff);
 }
 
 .dropdown-content {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0 auto;
+    position: absolute;
     text-decoration: none;
     display: none;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    background-color: rgba(255, 242, 242, 0.96);
+    min-width: 100%;
     z-index: 1;
-    
-    
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 2px #242323;
+}
+
+.dropdown-content a:hover{
+    color: white;
+    transition: 0.5s;
+    background-color: rgba(45, 165, 245, 0.79);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px #242323;
 }
 
 .show {display:block;}
 
 .option{
+    padding: 10px;
+    cursor: pointer;
     display: block;
 }
-
 /*second page*/
 .image {
     border-radius: 20px;
@@ -105,7 +116,6 @@ font-family: 'Roboto', sans-serif;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #second-page {
-    background-color: aqua;
 }
 #header{
     display: none;
@@ -122,6 +132,6 @@ font-family: 'Roboto', sans-serif;
     border-bottom: solid 10px red;
     box-sizing: border-box;
     padding: 10px 10px 20px 20px;
-    background-color: aquamarine;
+    background-color: rgba(183, 158, 158, 0.26);
     text-align: left;
 }
