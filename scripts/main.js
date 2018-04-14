@@ -2,10 +2,6 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function showCompute() {
-    document.getElementById("main").classList.toggle("show");
-}
-
 function hotelDrop() {
     document.getElementById("htlDrop").classList.toggle("show");
 }
@@ -283,16 +279,17 @@ var z;
 var i;
 var choice;
 
-var a,b,r,k;
+var a,b,r,k,a1;
 
 function sessionButton() {
     y = document.getElementById("dropdown");
     z = document.getElementById("header");
-    if (y.style.display === 'none' || z.style.display === 'none') {
-        z.style.display = "block";
+    a1 =  document.getElementById("main_id");
+    if (y.style.display === 'none' ) {
+        a1 .style.display = "block";
         y.style.display = "block";
     } else {
-        z.style.display = "none";
+        a1 .style.display = "block";       
         y.style.display = "none";
     }
     x = document.getElementById("session").getAttribute("value");
@@ -304,19 +301,25 @@ function sessionButton() {
             '<h2>' + myData.id[0].hotels[i].name + '</h2>' +
             '<h3>' + myData.id[0].hotels[i].address + '</h3>' +
             '<h3>Php ' + myData.id[0].hotels[i].rate + '</h3>' +
-            '<button class="comp-but"> Compute </button>' +
             '</div>';
         document.getElementById("htlDrop").innerHTML +=
             '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[0].hotels[i].rate+'">'+myData.id[0].hotels[i].name+'</button>';
 
     }
+//    function showCompute() {
+// document.getElementById("main_id").classList.toggle("show");
+//}
 }
 
 function burnhamButton() {
     y = document.getElementById("dropdown");
-    if (y.style.display === 'none') {
+    z = document.getElementById("header");
+    a1 =  document.getElementById("main_id");
+    if (y.style.display === 'none' ) {
+        a1 .style.display = "block";
         y.style.display = "block";
     } else {
+        a1 .style.display = "block";       
         y.style.display = "none";
     }
     x = document.getElementById("burnham").getAttribute("value");
@@ -328,7 +331,6 @@ function burnhamButton() {
             '<h2>' + myData.id[1].hotels[i].name + '</h2>' +
             '<h3>' + myData.id[1].hotels[i].address + '</h3>' +
             '<h3>Php ' + myData.id[1].hotels[i].rate + '</h3>' +
-            '<button class="comp-but"> Compute </button>' +
             '</div>';
         document.getElementById("htlDrop").innerHTML +=
             '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[1].hotels[i].rate+'">'+myData.id[1].hotels[i].name+'</button>';
@@ -338,9 +340,13 @@ function burnhamButton() {
 
 function campButton() {
     y = document.getElementById("dropdown");
-    if (y.style.display === 'none') {
+    z = document.getElementById("header");
+    a1 =  document.getElementById("main_id");
+    if (y.style.display === 'none' ) {
+        a1 .style.display = "block";
         y.style.display = "block";
     } else {
+        a1 .style.display = "block";       
         y.style.display = "none";
     }
     x = document.getElementById("camp").getAttribute("value");
@@ -352,7 +358,6 @@ function campButton() {
             '<h2>' + myData.id[2].hotels[i].name + '</h2>' +
             '<h3>' + myData.id[2].hotels[i].address + '</h3>' +
             '<h3>Php ' + myData.id[2].hotels[i].rate + '</h3>' +
-            '<button class="comp-but"> Compute </button>' +
             '</div>';
         document.getElementById("htlDrop").innerHTML +=
             '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[2].hotels[i].rate+'">'+myData.id[2].hotels[i].name+'</button>';
@@ -362,9 +367,13 @@ function campButton() {
 
 function wrightButton() {
     y = document.getElementById("dropdown");
-    if (y.style.display === 'none') {
+    z = document.getElementById("header");
+    a1 =  document.getElementById("main_id");
+    if (y.style.display === 'none' ) {
+        a1 .style.display = "block";
         y.style.display = "block";
     } else {
+        a1 .style.display = "block";       
         y.style.display = "none";
     }
     x = document.getElementById("wright").getAttribute("value");
@@ -376,7 +385,6 @@ function wrightButton() {
             '<h2>' + myData.id[3].hotels[i].name + '</h2>' +
             '<h3>' + myData.id[3].hotels[i].address + '</h3>' +
             '<h3>Php ' + myData.id[3].hotels[i].rate + '</h3>' +
-            '<button class="comp-but"> Compute </button>' +
             '</div>';
         document.getElementById("htlDrop").innerHTML +=
             '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[3].hotels[i].rate+'">'+myData.id[3].hotels[i].name+'</button>';
@@ -386,9 +394,13 @@ function wrightButton() {
 
 function minesButton() {
     y = document.getElementById("dropdown");
-    if (y.style.display === 'none') {
+    z = document.getElementById("header");
+    a1 =  document.getElementById("main_id");
+    if (y.style.display === 'none' ) {
+        a1 .style.display = "block";
         y.style.display = "block";
     } else {
+        a1 .style.display = "block";       
         y.style.display = "none";
     }
     x = document.getElementById("mines").getAttribute("value");
@@ -400,7 +412,6 @@ function minesButton() {
             '<h2>' + myData.id[4].hotels[i].name + '</h2>' +
             '<h3>' + myData.id[4].hotels[i].address + '</h3>' +
             '<h3>Php ' + myData.id[4].hotels[i].rate + '</h3>' +
-            '<button class="comp-but"> Compute </button>' +
             '</div>';
         document.getElementById("htlDrop").innerHTML +=
             '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[4].hotels[i].rate+'">'+myData.id[4].hotels[i].name+'</button>';
@@ -441,5 +452,3 @@ function scrollUp() {
         document.getElementById("topbutton").style.display = "none";
     }
 }
-
-

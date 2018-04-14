@@ -129,6 +129,24 @@ font-family: 'Roboto', sans-serif;
 #header{
     display: none;
 }
+
+#main_id{
+    display: none;
+    
+    padding: 1vh 1vh 1vh 1vh;
+    position: fixed;
+    
+    min-height: 10vh;
+    height: 40vh;
+    min-width: 5vh;
+    max-width: 25vh;
+    
+    top: 1vh;
+    right: 1vh;
+    
+    background-color: azure;
+}
+
 .logo{
     display: none;
      background: url(../images/logo.png) no-repeat 6px center;
@@ -145,6 +163,8 @@ font-family: 'Roboto', sans-serif;
     text-align: left;
 }
 
+
+
 .hotelList{
     text-decoration: none;
     display: none;
@@ -153,12 +173,9 @@ font-family: 'Roboto', sans-serif;
     z-index: 1;
 }
 
-#hotelDropdown li{
-    text-decoration: none;
+#btn{
+    margin: 0 auto;
 }
 
-#main{
-    display: none;
-}
 
 .show {display:block;}
