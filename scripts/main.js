@@ -2,6 +2,14 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showCompute() {
+    document.getElementById("main").classList.toggle("show");
+}
+
+function hotelDrop() {
+    document.getElementById("htlDrop").classList.toggle("show");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
@@ -275,6 +283,8 @@ var z;
 var i;
 var choice;
 
+var a,b,r,k;
+
 function sessionButton() {
     y = document.getElementById("dropdown");
     z = document.getElementById("header");
@@ -296,6 +306,8 @@ function sessionButton() {
             '<h3>Php ' + myData.id[0].hotels[i].rate + '</h3>' +
             '<button class="comp-but"> Compute </button>' +
             '</div>';
+        document.getElementById("htlDrop").innerHTML +=
+            '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[0].hotels[i].rate+'">'+myData.id[0].hotels[i].name+'</button>';
 
     }
 }
@@ -318,6 +330,8 @@ function burnhamButton() {
             '<h3>Php ' + myData.id[1].hotels[i].rate + '</h3>' +
             '<button class="comp-but"> Compute </button>' +
             '</div>';
+        document.getElementById("htlDrop").innerHTML +=
+            '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[1].hotels[i].rate+'">'+myData.id[1].hotels[i].name+'</button>';
 
     }
 }
@@ -340,6 +354,8 @@ function campButton() {
             '<h3>Php ' + myData.id[2].hotels[i].rate + '</h3>' +
             '<button class="comp-but"> Compute </button>' +
             '</div>';
+        document.getElementById("htlDrop").innerHTML +=
+            '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[2].hotels[i].rate+'">'+myData.id[2].hotels[i].name+'</button>';
 
     }
 }
@@ -362,6 +378,8 @@ function wrightButton() {
             '<h3>Php ' + myData.id[3].hotels[i].rate + '</h3>' +
             '<button class="comp-but"> Compute </button>' +
             '</div>';
+        document.getElementById("htlDrop").innerHTML +=
+            '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[3].hotels[i].rate+'">'+myData.id[3].hotels[i].name+'</button>';
 
     }
 }
@@ -384,8 +402,35 @@ function minesButton() {
             '<h3>Php ' + myData.id[4].hotels[i].rate + '</h3>' +
             '<button class="comp-but"> Compute </button>' +
             '</div>';
+        document.getElementById("htlDrop").innerHTML +=
+            '<button id="hotelDropdown" onclick="giveRate()" value="'+myData.id[4].hotels[i].rate+'">'+myData.id[4].hotels[i].name+'</button>';
 
     }
+}
+
+function giveRate() {
+    r = document.getElementById("hotelDropdown").getAttribute("value");
+    return r;
+}
+
+
+function computeButton() {
+    var result;
+    k = 1;
+    
+    c = document.getElementById("nDays").value;
+    d = document.getElementById("nGuests").value;
+    
+    e = c;
+    f = d
+    
+    while(f > 4){
+        f = f - 4;
+        k++;
+    }
+    result = Number(e) * r * k;
+    
+    document.getElementById("value").innerHTML = result;
 }
 
 /** home button */
