@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto');
-
+@media only screen and (max-width: 600px){
+    
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -84,14 +86,18 @@ html, body {
 }
 /*second page*/
 .image {
+    border: 2px solid #107481;
     border-radius: 20px;
     max-height: 50vh;
     max-width: 50vh;
 }
 h2{
+    text-shadow: 2px 2px #1a1a1a;
+    text-align: center;
+    letter-spacing: 3px;
     color: white;
     font-family: 'Fira Sans', sans-serif;
-    border-top: 5px solid #0598f4;
+    border-top: 5px solid #ffffff;
     border-bottom: 5px #a6d4f0; 
     font-size: 35px;
 }
@@ -126,8 +132,8 @@ font-family: 'Roboto', sans-serif;
 .logo{
     display: none;
      background: url(../images/logo.png) no-repeat 6px center;
-  width: 100px;
-  height: 100px;
+  width: 100vh;
+  height: 100vh;
   display: block;
 }
 

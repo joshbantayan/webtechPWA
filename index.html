@@ -21,13 +21,13 @@
                 </div>
                 <div id="dropdown-con">
                     <button onclick="myFunction()" class="dropbtn"> Where are you in Baguio? </button>
+                    
                     <div id="myDropdown" class="dropdown-content">
                         <a class="option" id="session" value="0" onclick="sessionButton()"> Session Road</a>
                         <a class="option" id="burnham" value="1" onclick="burnhamButton()"> Burnham Park </a>     
-                        <a class="option" id="camp" value="3" onclick="campButton()"> Camp John Hay </a>
-                        <a class="option" id="" value="3" onclick=""> Navy Base </a>
-                        <a class="option" id="" value="3" onclick=""> Wright Park </a>
-                        <a class="option" id="" value="3" onclick=""> Millitary Cut off </a>
+                        <a class="option" id="camp" value="2" onclick="campButton()"> Camp John Hay </a>
+                        <a class="option" id="wright" value="3" onclick="wrightButton()"> Wright park </a>
+                        <a class="option" id="mines" value="4" onclick="minesButton()"> Mines View </a>
                     </div>
                 </div>
             </div>
@@ -40,5 +40,14 @@
     </div>
     
 </body>
-
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js', {
+                scope: '/'
+            })
+         .then(function(registration) {
+                console.log("Service Worker registered", registration);
+            });
+    }
+</script>
 </html>
